@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image slider | dev hub asmr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="image-wrapper">
+        <div class="cardlist">
+          <button class="cardlist-btn img-btn btn-left">
+            <div class="img-icon">
+              <svg>
+                <use xlink:href="#wkit-img-arrow-left"></use>
+              </svg>
+            </div>
+          </button>
+          <div class="cards-wrapper">
+            <div class="card current-card">
+              <div class="card-image">
+                <img src="image/paris.jpg" alt="" />
+              </div>
+            </div>
+            <div class="card next-card">
+              <div class="card-image">
+                <img src="image/london.jpg" alt="" />
+              </div>
+            </div>
+            <div class="card previous-card">
+              <div class="card-image">
+                <img src="image/rome.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <button class="cardlist-btn img-btn btn-right">
+            <div class="img-icon">
+              <svg>
+                <use xlink:href="#wkit-img-arrow-right"></use>
+              </svg>
+            </div>
+          </button>
+        </div>
+        <div class="img-infolist">
+          <div class="info-wrapper">
+            <div class="info current-info">
+              <h1 class="info-text info-name">City of Lights</h1>
+              <h4 class="info-text location">Paris</h4>
+              <p class="info-text description">Bright nights</p>
+            </div>
+            <div class="info next-info">
+              <h1 class="info-text info-name">Smoke</h1>
+              <h4 class="info-text location">London</h4>
+              <p class="info-text description">The largest city in England</p>
+            </div>
+            <div class="info previous">
+              <h1 class="info-text info-name">Eternal City</h1>
+              <h4 class="info-text location">Rome</h4>
+              <p class="info-text description">The largest city in Italy</p>
+            </div>
+          </div>
+        </div>
+        <div class="app-bg">
+          <div class="background current">
+            <img src="image/paris.jpg" alt="" />
+          </div>
+          <div class="background next-image">
+            <img src="image/london.jpg" alt="" />
+          </div>
+          <div class="background previous-image">
+            <img src="image/rome.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="loading-wrapper">
+        <div class="loader-text">Loading...</div>
+        <div class="img-loader">
+          <span></span>
+        </div>
+      </div>
+      <svg class="img-icons">
+        <symbol id="wkit-img-arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+          <polyline points='328 112 184 256 328 400'/>
+        </symbol>
+        <symbol id="wkit-img-arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+          <polyline points='184 112 328 256 184 400'/>
+        </symbol>
+      </svg>
+      <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
+      <script src="script.js"></script>
+    
+</body>
+</html>

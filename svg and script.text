@@ -1,0 +1,10 @@
+<svg class="img-icons">
+        <symbol id="wkit-img-arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+          <polyline points='328 112 184 256 328 400'/>
+        </symbol>
+        <symbol id="wkit-img-arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+          <polyline points='184 112 328 256 184 400'/>
+        </symbol>
+      </svg>
+      <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
